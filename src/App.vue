@@ -6,50 +6,25 @@
     </div>
 
     <div class="column is-three-quarter conteudo" >
-      <Formulario
-      @aoSalvarTarefa="salvarTarefa"/>
-
-        <div class="lista-tarefas">
-        <Tarefa
-        v-for="(tarefa, index) in tarefas" 
-        :key="index"
-        :tarefa="tarefa"/> <!-- v-for (tarefa, index) esse index é a chave -->
-        <Box
-        v-if="listaVazia">
-          Você não esta produzindo pq ein??
-        </Box>
+      <router-view></router-view>
       </div>
-    </div>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import BarraLateral from './components/BarraLateral.vue'
-import Formulario from './components/Formulario.vue'
-import Tarefa from './components/Tarefa.vue';
-import type ITarefa from './components/interface/ITarefa.ts';
-import Box from './components/Box.vue';
+import BarraLateral from './components/BarraLateral.vue';
 
 export default defineComponent({
   components: {
-    BarraLateral, Formulario, Tarefa, Box
+    BarraLateral,
   },
   data() {
     return {
-      tarefas: [] as ITarefa[],
       modoEscuroAtivo: false
     }
   },
-  computed: {
-    listaVazia() : boolean{
-      return this.tarefas.length === 0
-    }
-  },
   methods: {
-    salvarTarefa(tarefa: ITarefa) {
-      this.tarefas.push(tarefa)
-    },
     trocarTema(modoescuroAtivo: boolean) {
       this.modoEscuroAtivo = modoescuroAtivo
     }

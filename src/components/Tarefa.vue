@@ -16,7 +16,7 @@
 import { defineComponent } from 'vue';
 import type { PropType } from 'vue';
 import Cronometro from './Cronometro.vue';
-import type ITarefa from './interface/ITarefa.ts';
+import type ITarefa from '../interface/ITarefa.ts';
 import Box from './Box.vue';
 
 export default defineComponent({

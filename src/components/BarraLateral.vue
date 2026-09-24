@@ -3,12 +3,32 @@
     <h1> 
         <img src="../assets/iconeBook-removebg-preview.png" alt="">
     </h1>
+    <div class="has-text-centered">
     <button 
     @click="alterarTema"
     class="button">
       {{ textobotao }}
     </button>
+    </div>
+    
+    <nav class="panel mt-5">
+      <ul>
+        <li>
+          <router-link to="/" class="link"> 
+            <i class="fas fa-tasks"></i>
+            Tarefas
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/projetos" class="link">
+            <i class="fas fa-project-diagram"> </i>
+            Projetos
+          </router-link>
+        </li>
+      </ul>
+    </nav>
 </header>
+
 </template>
 
 <script lang="ts">
@@ -31,25 +51,41 @@ export default defineComponent({
   },
     methods: {
       alterarTema() {
-      this.modoEscuroAtivo = !this.modoEscuroAtivo
+          this.modoEscuroAtivo = !this.modoEscuroAtivo
           this.$emit('aoTemaAlterado', this.modoEscuroAtivo) 
         }
     }
 })
 </script>
 
-<style>
+<style scoped>
+h1 {
+  text-align: center;
+}
+strong {
+  color: #f95738;
+}
 header {
-  padding: 1rem;
-  background: rgb(15, 0, 29);
+  background: #0d3b66;
   width: 100%;
   height: 100vh;
-  text-align: center;
+  padding: 2rem;
 }
 @media only screen and (max-width: 768px) {
   header {
-    padding: 2.5rem;
     height: auto;
   }
+}
+.panel li {
+  margin: 8px 0;
+}
+.link {
+  color:white;
+}
+.link:hover {
+  color: white;
+}
+.link.router-link-active {
+  color: red;
 }
 </style>

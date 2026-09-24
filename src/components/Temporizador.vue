@@ -5,7 +5,7 @@
         <button 
         :disabled="cronometroRodando"
         @click="iniciar"
-                        class="button">
+        class="button">
             <span class="icon">
                 <i class="fas fa-play"></i>
             </span>
@@ -56,6 +56,9 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style scoped>
+button{
+background-color: blue;
+}
 
 </style>
