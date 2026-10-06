@@ -71,16 +71,14 @@ export default defineComponent({
 
 <style>
 .formulario{
-    color: var(--texto-primario);
     background-color: var(--bg-primario);
 }
 
-/* .input, select{ 
-    background-color: transparent;
-    color: var(--texto-primario);
+.column input{
+    background-color: var(--input-background);
+    border: none;
+    color: var(--input-color);
 }
 
-::placeholder{
-    color: var(--texto-primario);
-} */
+
 </style>

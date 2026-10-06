@@ -46,20 +46,5 @@ export default defineComponent({
 .lista-tarefas{
   padding: 1.25rem;
 }
-
-/* DARK MODE */
-main{
-  --bg-primario: rgb(202, 202, 202);
-  --texto-primario: #28004e;
-}
-
-main.modo-escuro{
-  --bg-primario: #28004e;
-  --texto-primario: rgb(235, 235, 235);
-}
-
-.conteudo{
-  background: var(--bg-primario);
-}
 </style>
 

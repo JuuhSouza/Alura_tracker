@@ -62,11 +62,9 @@ export default defineComponent({
 h1 {
   text-align: center;
 }
-strong {
-  color: #f95738;
-}
+
 header {
-  background: #0d3b66;
+  background: var(--bg-menu-lateral);
   width: 100%;
   height: 100vh;
   padding: 2rem;
@@ -76,16 +74,25 @@ header {
     height: auto;
   }
 }
-.panel li {
-  margin: 8px 0;
+
+.panel{
+  padding: 0.5rem 0;
 }
+
+.panel li {
+  margin: 8px;
+}
+
 .link {
   color:white;
+  transition: all .2s ease;
 }
+
 .link:hover {
-  color: white;
+  opacity: .7;
 }
+
 .link.router-link-active {
-  color: red;
+  color: #00a2ff;
 }
 </style>

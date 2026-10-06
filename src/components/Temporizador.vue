@@ -58,7 +58,7 @@ export default defineComponent({
 
 <style scoped>
 button{
-background-color: blue;
+    background: var(--input-background);
 }
 
 </style>

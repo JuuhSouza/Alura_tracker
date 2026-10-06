@@ -31,3 +31,9 @@ export default defineComponent({
         }
 })
 </script>
+
+<style>
+.columns{
+    color:var(--descricao-color);
+}
+</style>

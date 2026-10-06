@@ -26,7 +26,7 @@ export default defineComponent({
 
 <style>
 .display{
-    color: var(--texto-primario);
-    background-color: var(--bg-primario);
+    color: var(--cronometro-color);
+    background-color: transparent;
 }
 </style>

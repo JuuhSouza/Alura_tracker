@@ -11,15 +11,9 @@ export default defineComponent({
   data() {
     return {
       estilos: {
-          backgroundColor: '#f0f8ff7c'
+          backgroundColor: '#FFF4D4'
         }
       }
     }
 })
 </script>
-
-<style scoped>
-.box{
-    background-color: red;
-}
-</style>

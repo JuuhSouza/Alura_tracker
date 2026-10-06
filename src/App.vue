@@ -39,13 +39,23 @@ export default defineComponent({
 
 /* DARK MODE */
 main{
-  --bg-primario: rgb(202, 202, 202);
+  --bg-primario: #F0F2F0;
+  --bg-menu-lateral: #1F2C3D;
   --texto-primario: #28004e;
+  --cronometro-color: #28004e;
+  --input-color: #f8f8f8;
+  --input-background: #2E3444;
+  --descricao-color: #2E3444;
 }
 
 main.modo-escuro{
-  --bg-primario: #28004e;
-  --texto-primario: rgb(235, 235, 235);
+  --bg-primario: #333333;
+  --bg-menu-lateral: #1F2C3D;
+  --texto-primario: #f8f7f8;
+  --cronometro-color: #E3AC1B;
+  --input-color: #f8f8f8;
+  --input-background: #3f465a;
+  --descricao-color: #030303;
 }
 
 .conteudo{
